@@ -1,5 +1,6 @@
 function [A] = createA(n)
   A = zeros(n);
+  A = sparse(A);
   
   A(1, 1:4) = [16, -9, 8/3, -(1/4)];
   A(2, 1:4) = [-4, 6, -4, 1];

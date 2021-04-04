@@ -1,6 +1,8 @@
 function [L, U] = bandedLUFac(A, p, q)
   [n,n] = size(A);
   L = eye(n);
+  A = sparse(A);
+  L = sparse(L);
   
   % iterasi k untuk kolom 1 sampai n-1
   for k=1:n-1
