@@ -7,5 +7,6 @@ function [b] = createB(L,n,w,d)
   fx=-480*w*d*g;
   
   b(1:n) = (h^4/(E*I))*fx;
+  b=b';
   
 endfunction

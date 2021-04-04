@@ -10,4 +10,5 @@ function [y] = exactVal(L,n,w,d)
   for i=1:n
     y(i) = (f/(24*E*I))*(x(i)^2)*((x(i)^2)-(4*L*x(i))+(6*L^2));
   endfor
+  y=y';
 endfunction
